@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stack Using Linked List Visualization</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        #container {
+            width: auto; /* Allow dynamic width */
+            max-width: 80%; /* Set a maximum width */
+            margin: auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body onload="init();" class="VisualizationMainPage">
+    <div id="container">
+        <div id="header">  
+            <h1>Stack (Linked List Implementation)</h1>
+        </div>
+        
+        <div id="mainContent"> 
+            <div id="algoControlSection">
+                <table id="AlgorithmSpecificControls">
+                    <tr>
+                        <td><button onclick="push()">Push</button></td>
+                        <td><button onclick="pop()">Pop</button></td>
+                    </tr>
+                </table> 
+            </div>
+            <canvas id="canvas" width="1000" height="500"></canvas>
+            <div id="generalAnimationControlSection">
+                <table id="GeneralAnimationControls">  
+                    <!-- General animation controls can be added here -->
+                </table>        
+            </div>
+        </div> <!-- mainContent -->
+        
+      
+    </div><!-- container -->
+    <script src="script.js"></script>
+</body>
+</html>
