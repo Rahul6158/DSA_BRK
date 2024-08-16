@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stack Visualization</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Stack Visualization (Web Browser)</h1>
+        <div class="stacks-container">
+            <div class="stack">
+                <h2>Left Stack</h2>
+                <div id="leftStack" class="stack-content"></div>
+            </div>
+            <div class="arrows">
+                <button id="leftArrow" class="arrow" onclick="moveLeftToRight()">←</button>
+                <button id="rightArrow" class="arrow" onclick="moveRightToLeft()">→</button>
+            </div>
+            <div class="stack">
+                <h2>Right Stack</h2>
+                <div id="rightStack" class="stack-content"></div>
+            </div>
+        </div>
+        <button onclick="pushToLeftStack()">Push</button>
+        <button onclick="popFromLeftStack()">Pop</button>
+
+        <!-- Small window display for website -->
+        <div class="small-window">
+            <iframe id="websiteFrame" src="" frameborder="0"></iframe>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
