@@ -1,18 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Stack Visualization</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stack Visualization by BRK</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <div class="container">
-    <h1>Stack Visualization</h1>
-    <div id="stack"></div>
-    <button onclick="push()">Push</button>
-    <button onclick="pop()">Pop</button>
-  </div>
-  <script src="script.js"></script>
+    <!-- Header -->
+    <header>
+        <h1 class="heading">Stack Visualization</h1>
+    </header>
+
+    <div class="container">
+        <div class="container-header">
+            <input type="number" class="text" placeholder="Enter a number" required>
+            <button class="push">Push</button>
+            <button class="pop">Pop</button>
+            <button class="reset">Reset</button>
+        </div>
+
+        <div class="container-body">
+            <div class="stack">
+                <div class="main-stack-bucket"></div>
+            </div>
+            
+
+            <div class="info">
+                <div class="sec1">
+                    <h3>Top of the Stack:</h3>
+                    <button class="box"></button>
+                </div>
+                <div class="sec2">
+                    <h3>Last Pushed Item:</h3>
+                    <button class="box"></button>
+                </div>
+                <div class="sec3">
+                    <h3>Last Popped Item:</h3>
+                    <button class="box"></button>
+                </div>
+                <div class="sec4">
+                    <h3>Size of the Stack:</h3>
+                    <button class="box">5</button>
+                </div>
+
+                <div class="message-box">
+                    <h2>Process Happened</h2>
+                    <div class="message"></div>
+                </div>
+            </div>
+        </div>
+        <h3 id="stk">Stack</h3>
+    </div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+    <footer>
+         <p>Queue Using Linked List - Dr. Bomma Rama Krishna</p>
+    </footer>
 </body>
+
 </html>
